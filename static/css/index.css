@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway&display=swap');
+
+* {
+	list-style: none;
+}
+
+.navbar-config {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+.slider-item-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	padding: 0 350px;
+}
+.slider-item-content-text {
+	font-size: 20px;
+}
+.slider-item-content-button {
+	border-radius: 3px;
+	background-color: #dbbc94;
+	box-shadow: inset 0 -2px 0 0 rgba(191,161,121,1);
+	font-size: 22px;
+	font-weight: bold;	
+}
+.filter-item {
+	border-radius: 3px;
+	border: 1px solid #000;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.filter-item-active {
+	background: linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+	color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.marketing-title {
+	font-size: 22px;
+	font-family: "Raleway";
+	font-weight: bold;
+	line-height: 1.2;
+}
+.font-main {
+	font-family: "Raleway";
+}
+.marketing-title-active {
+	color: rgb(199, 178, 153);
+}
+.line {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-top: -2px;
+	margin-left: -60px;
+	width: 120px;
+	height: 4px;
+	background: rgba(199, 178, 153, 0.4);
+}
+.line-active {
+	background: rgba(199, 178, 153, 1);
+}
+.ideas {
+  background-color: rgb(251, 250, 248);
+}
+
+.ideas-description {
+	width: 100%;
+	background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+}
+.caption {
+	position: relative;
+	transition: 0.2s;
+	z-index: 10;
+}
+.caption:before {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(251, 250, 248);
+	transform: rotate(45deg);
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: -15px;
+	margin-left: 15px;
+	transition: 0.2s;
+	z-index: 0;
+}
+.caption:hover {
+	color: #fff;
+	background: rgb(78,52,39);
+}
+.caption:hover.caption:before {
+	background: rgb(78,52,39)
+}
